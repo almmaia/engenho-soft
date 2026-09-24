@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
-import { FaInstagram, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import BrandMark from "./BrandMark";
 
 function Footer() {
@@ -39,9 +39,6 @@ function Footer() {
           </a>
           <a className="social-contact" href="https://www.instagram.com/engenhosoft/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Engenho Soft" title="Instagram">
             <span className="social-icon"><FaInstagram size={19} /></span>
-          </a>
-          <a className="social-contact" href="https://www.linkedin.com/company/maia-tecnologia/" target="_blank" rel="noreferrer" aria-label="Abrir o LinkedIn da Engenho Soft" title="LinkedIn">
-            <span className="social-icon"><FaLinkedinIn size={18} /></span>
           </a>
           </div>
         </div>

@@ -1331,7 +1331,7 @@ h2 {
   transform: translateY(-4px);
 }
 
-/* MAIA CYBER — VISUAL E PÁGINAS */
+/* ENGENHO SOFT — VISUAL E PÁGINAS */
 
 main {
   min-height: calc(100vh - 300px);
@@ -3128,7 +3128,7 @@ main {
   }
 }
 
-/* DIREÇÃO EDITORIAL MAIA CYBER */
+/* DIREÇÃO EDITORIAL ENGENHO SOFT */
 .brand-mark{display:inline-flex;flex-direction:column;align-items:center}
 .brand-logo-vector{display:block;width:104px;height:86px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(39,184,255,.22))}
 .brand-mark-vertical .brand-logo-vector{width:174px;height:150px}
@@ -4085,10 +4085,10 @@ body,
 }
 
 /* ================================================================
-   MAIA / DIGITAL ENGINEERING STUDIO — direção final 2026
+   ENGENHO SOFT / DIGITAL ENGINEERING STUDIO — direção final 2026
    ================================================================ */
-:root{--maia-ink:#0a0a0b;--maia-paper:#eeeae2;--maia-silver:#b9bec2;--maia-line:rgba(255,255,255,.14);--maia-signal:#dff7ff}
-body{background:var(--maia-paper)}
+:root{--engenho-ink:#0a0a0b;--engenho-paper:#eeeae2;--engenho-silver:#b9bec2;--engenho-line:rgba(255,255,255,.14);--engenho-signal:#dff7ff}
+body{background:var(--engenho-paper)}
 .header{background:rgba(9,9,10,.72);border-color:rgba(255,255,255,.11);backdrop-filter:blur(24px) saturate(130%)}
 .nav{height:88px}.nav-links a{font-size:12px;letter-spacing:-.01em}.nav-links a::after{height:1px;background:#fff}.header .button{background:#f1eee7!important;color:#0a0a0b!important;border-color:#f1eee7!important}
 .hero-premium{min-height:920px;background:radial-gradient(ellipse at 79% 32%,rgba(221,229,233,.13),transparent 31%),radial-gradient(ellipse at 63% 70%,rgba(52,70,78,.13),transparent 34%),#09090a}
@@ -4109,11 +4109,11 @@ body{background:var(--maia-paper)}
 .product-shot-main img{object-position:center top}.product-shot-top img{object-position:center top}.product-shot-bottom img{object-position:center top}
 .product-gallery-note{left:-14px;color:#696f73}
 .studio-reel{position:relative;z-index:8;overflow:hidden;color:#101112;background:#d5d0c7;border-top:1px solid #bcb7ae;border-bottom:1px solid #bcb7ae}
-.studio-reel-track{width:max-content;display:flex;align-items:stretch;min-height:76px;animation:maia-reel 32s linear infinite;will-change:transform}
+.studio-reel-track{width:max-content;display:flex;align-items:stretch;min-height:76px;animation:engenho-reel 32s linear infinite;will-change:transform}
 .studio-reel-group{display:flex;align-items:center;gap:26px;padding-right:26px}
 .studio-reel-item{display:flex;align-items:center;gap:26px;font-size:17px;font-weight:560;letter-spacing:-.02em;white-space:nowrap}
 .studio-reel i{flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#5c6265}
-@keyframes maia-reel{to{transform:translateX(-50%)}}
+@keyframes engenho-reel{to{transform:translateX(-50%)}}
 .immersive-story{height:340vh;background:#080809}
 .immersive-sticky{background:radial-gradient(ellipse at 72% 54%,rgba(201,207,211,.09),transparent 36%),#080809}
 .immersive-copy .section-label{color:#b7bdc0}.immersive-copy h2{font-weight:560;letter-spacing:-.055em}.immersive-copy p{color:#999fa3}.story-progress i{background:#343638}.story-progress i.active{background:#e0e3e4}
