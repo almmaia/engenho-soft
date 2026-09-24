@@ -205,20 +205,6 @@ function Home() {
         </div>
       </section>
 
-      <section className="selected-work">
-        <div className="container">
-          <div className="selected-work-head">
-            <div><span className="section-label">TRABALHOS SELECIONADOS</span><h2>Soluções desenvolvidas para diferentes operações</h2></div>
-            <Link to="/cases">Ver todos os cases <ArrowRight size={18} /></Link>
-          </div>
-          <div className="selected-work-list">
-            <Link to="/cases"><span>Operação financeira</span><strong>Uma plataforma para organizar jornadas, informações e rotinas</strong><ArrowRight /></Link>
-            <Link to="/cases"><span>Cultura e comunidade</span><strong>Uma experiência digital para aproximar pessoas, atividades e gestão</strong><ArrowRight /></Link>
-            <Link to="/cases"><span>Dados e acompanhamento</span><strong>Indicadores estruturados para tornar decisões mais claras</strong><ArrowRight /></Link>
-          </div>
-        </div>
-      </section>
-
       <section className="home-cta home-cta-editorial">
         <div className="container home-cta-content">
           <div>

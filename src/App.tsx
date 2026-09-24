@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Solucoes from "./pages/Solucoes";
 import Processo from "./pages/Processo";
-import Cases from "./pages/Cases";
 import Contato from "./pages/Contato";
 
 import "./index.css";
@@ -29,10 +28,6 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
   "/processo": {
     title: "Como trabalhamos | Engenho Soft",
     description: "Do entendimento à evolução: conheça o processo da Engenho Soft para criar soluções digitais personalizadas.",
-  },
-  "/cases": {
-    title: "Cases de Software | Engenho Soft",
-    description: "Conheça experiências da Engenho Soft com plataformas, automações, integrações, dados, dashboards e produtos digitais.",
   },
   "/contato": {
     title: "Fale com a Engenho Soft — Software, Automação e IA",
@@ -74,7 +69,6 @@ function App() {
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/solucoes" element={<Solucoes />} />
             <Route path="/processo" element={<Processo />} />
-            <Route path="/cases" element={<Cases />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

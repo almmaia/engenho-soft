@@ -55,15 +55,6 @@ function Header() {
             </div>
           </div>
 
-          <div className={openGroup === "experiencias" ? "nav-group open" : "nav-group"}>
-            <button type="button" className="nav-group-trigger" onClick={() => toggleGroup("experiencias")} aria-expanded={openGroup === "experiencias"}>Experiências <ChevronDown size={13} /></button>
-            <div className="nav-mega">
-              <Link to="/cases" onClick={closeMenu}><strong>Visão geral</strong><span>Conheça nossas experiências</span></Link>
-              <Link to="/cases" onClick={closeMenu}><strong>Trabalhos selecionados</strong><span>Desafios e soluções construídas</span></Link>
-              <Link to="/cases" onClick={closeMenu}><strong>Áreas de atuação</strong><span>Produtos para diferentes contextos</span></Link>
-            </div>
-          </div>
-
           <Link to="/contato" className="nav-cta" onClick={closeMenu}>
             Fale conosco
           </Link>

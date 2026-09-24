@@ -4,7 +4,7 @@ Site institucional da Engenho Soft, empresa de engenharia de software, produtos 
 
 Site oficial: https://engenhosoft.com.br
 
-O projeto contém somente as páginas institucionais públicas do site: início, sobre, soluções, processo, cases e contato.
+O projeto contém somente as páginas institucionais públicas do site: início, sobre, soluções, processo e contato.
 
 Currently, two official plugins are available:
 
