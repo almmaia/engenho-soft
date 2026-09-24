@@ -2,7 +2,7 @@
 
 Site institucional da Engenho Soft, empresa de engenharia de software, produtos digitais, automação e inteligência artificial.
 
-Site oficial: https://www.maiacyber.me
+Site oficial: https://engenhosoft.com.br
 
 O projeto contém somente as páginas institucionais públicas do site: início, sobre, soluções, processo, cases e contato.
 
