@@ -4109,8 +4109,10 @@ body{background:var(--maia-paper)}
 .product-shot-main img{object-position:center top}.product-shot-top img{object-position:center top}.product-shot-bottom img{object-position:center top}
 .product-gallery-note{left:-14px;color:#696f73}
 .studio-reel{position:relative;z-index:8;overflow:hidden;color:#101112;background:#d5d0c7;border-top:1px solid #bcb7ae;border-bottom:1px solid #bcb7ae}
-.studio-reel>div{width:max-content;display:flex;align-items:center;gap:26px;min-height:76px;animation:maia-reel 32s linear infinite}
-.studio-reel span{font-size:17px;font-weight:560;letter-spacing:-.02em;white-space:nowrap}.studio-reel i{width:5px;height:5px;border-radius:50%;background:#5c6265}
+.studio-reel-track{width:max-content;display:flex;align-items:stretch;min-height:76px;animation:maia-reel 32s linear infinite;will-change:transform}
+.studio-reel-group{display:flex;align-items:center;gap:26px;padding-right:26px}
+.studio-reel-item{display:flex;align-items:center;gap:26px;font-size:17px;font-weight:560;letter-spacing:-.02em;white-space:nowrap}
+.studio-reel i{flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#5c6265}
 @keyframes maia-reel{to{transform:translateX(-50%)}}
 .immersive-story{height:340vh;background:#080809}
 .immersive-sticky{background:radial-gradient(ellipse at 72% 54%,rgba(201,207,211,.09),transparent 36%),#080809}
@@ -4125,9 +4127,9 @@ body{background:var(--maia-paper)}
 .founder-card.founder-editorial{padding:72px 0;border-top:1px solid #bbb6ad;border-bottom:1px solid #bbb6ad}
 .founder-editorial .founder-photo img{filter:saturate(.82);transition:filter .4s ease,transform .6s ease}.founder-editorial:hover .founder-photo img{filter:saturate(1);transform:scale(1.015)}
 .footer{background:#09090a!important}
-@media(max-width:980px){.hero-premium{min-height:1300px}.hero-premium .executive-hero-layout{grid-template-columns:1fr;min-height:auto;gap:48px}.hero-product-gallery{min-height:570px}.studio-reel>div{min-height:66px}.immersive-story{height:300vh}}
-@media(max-width:640px){.nav{height:76px}.hero-premium{min-height:1060px}.hero-premium .executive-hero-layout{padding-top:104px}.hero-premium h1{font-size:clamp(44px,13.4vw,60px)}.hero-product-gallery{min-height:400px}.studio-reel span{font-size:14px}.studio-reel>div{min-height:58px}.immersive-story{height:280vh}.founder-card.founder-editorial{padding:48px 0}}
-@media(prefers-reduced-motion:reduce){.studio-reel>div{animation:none}.product-shot{transition:none}}
+@media(max-width:980px){.hero-premium{min-height:1300px}.hero-premium .executive-hero-layout{grid-template-columns:1fr;min-height:auto;gap:48px}.hero-product-gallery{min-height:570px}.studio-reel-track{min-height:66px}.immersive-story{height:300vh}}
+@media(max-width:640px){.nav{height:76px}.hero-premium{min-height:1060px}.hero-premium .executive-hero-layout{padding-top:104px}.hero-premium h1{font-size:clamp(44px,13.4vw,60px)}.hero-product-gallery{min-height:400px}.studio-reel-item{font-size:14px}.studio-reel-track{min-height:58px}.immersive-story{height:280vh}.founder-card.founder-editorial{padding:48px 0}}
+@media(prefers-reduced-motion:reduce){.studio-reel-track{animation:none}.product-shot{transition:none}}
 
 /* Ajustes pontuais: fundador e profundidade da narrativa */
 .founder-card.founder-editorial{
@@ -6615,4 +6617,16 @@ body{background:#0a0c0f}
   .footer .footer-navigation{
     justify-self:center!important;
   }
+}
+.engenho-brand-mark{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.engenho-brand-mark img{display:block;width:clamp(132px,11vw,176px);height:auto;object-fit:contain}
+.engenho-brand-mark.brand-mark-vertical img{width:clamp(180px,17vw,245px)}
+.engenho-brand-mark .brand-mark-caption{font-style:normal;font-size:11px;line-height:1.35;letter-spacing:.12em;text-transform:uppercase;color:#8398a8;text-align:center;max-width:260px}
+@media(max-width:760px){.engenho-brand-mark img{width:124px}.engenho-brand-mark.brand-mark-vertical img{width:190px}}
+
+/* A marca original usa preto e azul; no fundo escuro, a versão clara mantém todo o desenho legível. */
+.header .engenho-brand-mark img,
+.footer .engenho-brand-mark img{
+  filter:grayscale(1) brightness(0) invert(1);
+  opacity:.96;
 }

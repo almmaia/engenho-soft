@@ -1,6 +1,6 @@
-# Maia Tecnologia — Engenharia de Software
+# Engenho Soft — Engenharia de Software, Automação e IA
 
-Site institucional da Maia Tecnologia, empresa de engenharia de software, produtos digitais, automação e inteligência artificial.
+Site institucional da Engenho Soft, empresa de engenharia de software, produtos digitais, automação e inteligência artificial.
 
 Site oficial: https://www.maiacyber.me
 

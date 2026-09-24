@@ -30,17 +30,17 @@ function Footer() {
 
         <div className="footer-contact">
           <h3>Redes e contato</h3>
-          <div className="footer-social-icons" aria-label="Canais de contato da Maia Tecnologia">
-          <a className="social-contact whatsapp-contact" href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Tecnologia." target="_blank" rel="noreferrer" aria-label="Conversar com a Maia Tecnologia pelo WhatsApp" title="WhatsApp">
+          <div className="footer-social-icons" aria-label="Canais de contato da Engenho Soft">
+          <a className="social-contact whatsapp-contact" href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Engenho%20Soft." target="_blank" rel="noreferrer" aria-label="Conversar com a Engenho Soft pelo WhatsApp" title="WhatsApp">
             <span className="social-icon"><FaWhatsapp size={19} /></span>
           </a>
-          <a className="social-contact" href="mailto:alanmaix@gmail.com?subject=Contato pelo site Maia Tecnologia" aria-label="Enviar um e-mail para a Maia Tecnologia" title="E-mail">
+          <a className="social-contact" href="mailto:alanmaix@gmail.com?subject=Contato pelo site Engenho Soft" aria-label="Enviar um e-mail para a Engenho Soft" title="E-mail">
             <span className="social-icon"><Mail size={18} /></span>
           </a>
-          <a className="social-contact" href="https://www.instagram.com/maiacyber/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Maia Tecnologia" title="Instagram">
+          <a className="social-contact" href="https://www.instagram.com/maiatechbr/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Engenho Soft" title="Instagram">
             <span className="social-icon"><FaInstagram size={19} /></span>
           </a>
-          <a className="social-contact" href="https://www.linkedin.com/company/maia-tecnologia/" target="_blank" rel="noreferrer" aria-label="Abrir o LinkedIn da Maia Tecnologia" title="LinkedIn">
+          <a className="social-contact" href="https://www.linkedin.com/company/maia-tecnologia/" target="_blank" rel="noreferrer" aria-label="Abrir o LinkedIn da Engenho Soft" title="LinkedIn">
             <span className="social-icon"><FaLinkedinIn size={18} /></span>
           </a>
           </div>
@@ -48,7 +48,7 @@ function Footer() {
       </div>
 
       <div className="container footer-bottom">
-        <span>© 2026 Maia Tecnologia. Todos os direitos reservados.</span>
+        <span>© 2026 Engenho Soft. Todos os direitos reservados.</span>
 
       </div>
     </footer>

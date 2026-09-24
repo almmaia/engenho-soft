@@ -38,13 +38,13 @@ function WhatsAppButton() {
     } else if (normalized.includes("prazo")) {
       setAssistantReply("O prazo é definido depois de entendermos o objetivo, as funcionalidades e as integrações necessárias.");
     } else if (normalized.includes("solu")) {
-      setAssistantReply("A Maia desenvolve sistemas, plataformas, automações, integrações, dados e produtos digitais sob medida.");
+      setAssistantReply("A Engenho Soft desenvolve sistemas, plataformas, automações, integrações, dados e produtos digitais sob medida.");
     } else {
       setAssistantReply("Entendi. Posso encaminhar sua mensagem diretamente ao Alan para ele continuar o atendimento pelo WhatsApp.");
     }
   };
 
-  const whatsappUrl = `${baseUrl}?text=${encodeURIComponent(message.trim() || "Olá, vim pelo site da Maia Tecnologia e gostaria de conversar sobre um projeto.")}`;
+  const whatsappUrl = `${baseUrl}?text=${encodeURIComponent(message.trim() || "Olá, vim pelo site da Engenho Soft e gostaria de conversar sobre um projeto.")}`;
 
   return (
     <div className={`whatsapp-assistant${open ? " open" : ""}${footerVisible ? " footer-visible" : ""}`}>
@@ -52,11 +52,11 @@ function WhatsAppButton() {
         <div className="whatsapp-panel" role="dialog" aria-label="Atendimento pelo WhatsApp">
           <header>
             <span><FaWhatsapp size={21} /></span>
-            <div><strong>Maia Tecnologia</strong><small>Atendimento pelo WhatsApp</small></div>
+            <div><strong>Engenho Soft</strong><small>Atendimento pelo WhatsApp</small></div>
             <button type="button" onClick={() => setOpen(false)} aria-label="Fechar atendimento"><X size={18} /></button>
           </header>
           <div className="whatsapp-greeting">
-            <small>Maia Tecnologia</small>
+            <small>Engenho Soft</small>
             <p>Olá! Conte brevemente o que você precisa construir, melhorar ou automatizar.</p>
           </div>
           <div className="whatsapp-quick-options" aria-label="Assuntos rápidos">
@@ -64,7 +64,7 @@ function WhatsAppButton() {
               <button type="button" key={option} onClick={() => { setMessage(option); setAssistantReply(""); }}>{option}</button>
             ))}
           </div>
-          {assistantReply && <div className="whatsapp-reply"><small>Assistente Maia</small><p>{assistantReply}</p></div>}
+          {assistantReply && <div className="whatsapp-reply"><small>Assistente Engenho Soft</small><p>{assistantReply}</p></div>}
           <form onSubmit={sendMessage}>
             <label htmlFor="whatsapp-message">Sua mensagem</label>
             <div><input id="whatsapp-message" value={message} onChange={(event) => setMessage(event.target.value)} placeholder="Digite aqui..." /><button type="submit" aria-label="Continuar no WhatsApp"><Send size={18} /></button></div>
@@ -72,7 +72,7 @@ function WhatsAppButton() {
           {assistantReply && <a className="whatsapp-handoff" href={whatsappUrl} target="_blank" rel="noreferrer"><FaWhatsapp size={17} /> Continuar com Alan no WhatsApp</a>}
         </div>
       )}
-      <button className="whatsapp-button" type="button" onClick={() => setOpen(!open)} aria-label={open ? "Fechar atendimento" : "Conversar com a Maia Tecnologia pelo WhatsApp"}>
+      <button className="whatsapp-button" type="button" onClick={() => setOpen(!open)} aria-label={open ? "Fechar atendimento" : "Conversar com a Engenho Soft pelo WhatsApp"}>
         {open ? <X size={23} /> : <FaWhatsapp size={25} />}
       </button>
     </div>

@@ -11,7 +11,7 @@ function Sobre() {
     <section className="section about-page">
       <div className="container">
         <div className="section-heading">
-          <span className="section-label">SOBRE A MAIA TECNOLOGIA</span>
+          <span className="section-label">SOBRE A ENGENHO SOFT</span>
 
           <h1>
             Tecnologia com
@@ -19,7 +19,7 @@ function Sobre() {
           </h1>
 
           <p>
-            A Maia Tecnologia nasceu para desenvolver soluções
+            A Engenho Soft nasceu para desenvolver soluções
             digitais que aproximam tecnologia, operação e resultado.
           </p>
         </div>
@@ -112,21 +112,21 @@ function Sobre() {
 
         <div className="founder-card founder-editorial">
           <div className="founder-photo">
-            <img src="/team/alan-maia.jpg" alt="Alan Maia, fundador e desenvolvedor de software da Maia Tecnologia" />
+            <img src="/team/alan-maia.jpg" alt="Alan Maia, fundador e desenvolvedor de software da Engenho Soft" />
           </div>
           <div>
             <span className="section-label">QUEM ESTÁ À FRENTE</span>
             <h2>Alan Maia</h2>
             <strong>Fundador e Desenvolvedor de Software</strong>
-            <p>Atua diretamente no entendimento de cada necessidade, nas decisões técnicas e no desenvolvimento das soluções da Maia Tecnologia.</p>
+            <p>Atua diretamente no entendimento de cada necessidade, nas decisões técnicas e no desenvolvimento das soluções da Engenho Soft.</p>
             <span className="founder-location">Florianópolis, Santa Catarina • Atendimento nacional</span>
             <a
-              href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Tecnologia%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+              href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Engenho%20Soft%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
               target="_blank"
               rel="noreferrer"
               className="button button-primary founder-button"
             >
-              Fale com a Maia Tecnologia <ArrowRight size={18} />
+              Fale com a Engenho Soft <ArrowRight size={18} />
             </a>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import DigitalScene from "../components/DigitalScene";
 
 const WHATSAPP =
-  "https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Tecnologia%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.";
+  "https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Engenho%20Soft%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.";
 
 const scenes = [
   {
@@ -35,6 +35,14 @@ const outcomes = [
   { title: "Organizar uma operação", text: "Sistemas sob medida para substituir controles dispersos e dar clareza ao trabalho diário." },
   { title: "Conectar sistemas e dados", text: "Integrações e APIs para reduzir retrabalho e manter informações consistentes entre plataformas." },
   { title: "Evoluir o que já existe", text: "Modernização, novas jornadas e sustentação técnica sem interromper a operação." },
+];
+
+const reelItems = [
+  "Produtos digitais",
+  "Engenharia de software",
+  "Automação",
+  "Dados e inteligência",
+  "Experiências web",
 ];
 
 function Home() {
@@ -130,16 +138,17 @@ function Home() {
         </div>
       </section>
 
-      <div className="studio-reel" aria-label="Áreas de atuação da Maia Tecnologia">
-        <div>
-          <span>Produtos digitais</span><i />
-          <span>Engenharia de software</span><i />
-          <span>Automação</span><i />
-          <span>Dados e inteligência</span><i />
-          <span>Experiências web</span><i />
-          <span>Produtos digitais</span><i />
-          <span>Engenharia de software</span><i />
-          <span>Automação</span><i />
+      <div className="studio-reel" aria-label="Áreas de atuação da Engenho Soft">
+        <div className="studio-reel-track">
+          {[0, 1].map((copy) => (
+            <div className="studio-reel-group" aria-hidden={copy === 1} key={copy}>
+              {reelItems.map((item) => (
+                <span className="studio-reel-item" key={`${copy}-${item}`}>
+                  <span>{item}</span><i />
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -217,7 +226,7 @@ function Home() {
             <h2>Vamos construir a próxima solução</h2>
           </div>
           <a href={WHATSAPP} target="_blank" rel="noreferrer" className="button button-primary">
-            Fale com a Maia Tecnologia <ArrowRight size={19} />
+            Fale com a Engenho Soft <ArrowRight size={19} />
           </a>
         </div>
       </section>

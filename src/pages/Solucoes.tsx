@@ -178,7 +178,7 @@ function SolutionCard({
     <a
       id={id}
       className="solution-card"
-      href={`https://wa.me/5548998141388?text=${encodeURIComponent(`Olá, gostaria de saber mais sobre ${title} da Maia Tecnologia.`)}`}
+      href={`https://wa.me/5548998141388?text=${encodeURIComponent(`Olá, gostaria de saber mais sobre ${title} da Engenho Soft.`)}`}
       target="_blank"
       rel="noreferrer"
       aria-label={`Solicitar informações sobre ${title}`}

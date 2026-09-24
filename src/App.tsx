@@ -15,28 +15,28 @@ import "./index.css";
 
 const pageMetadata: Record<string, { title: string; description: string }> = {
   "/": {
-    title: "Maia Tecnologia — Engenharia de Software em Florianópolis",
+    title: "Engenho Soft — Engenharia de Software, Automação e IA",
     description: "Engenharia de software, sistemas, plataformas web, automação e inteligência artificial em Florianópolis, Santa Catarina, com atendimento em todo o Brasil.",
   },
   "/sobre": {
-    title: "Sobre a Maia Tecnologia — Engenharia de Software",
-    description: "Conheça a Maia Tecnologia, empresa de desenvolvimento de software fundada por Alan Maia, sediada em Florianópolis, Santa Catarina, com atendimento nacional.",
+    title: "Sobre a Engenho Soft — Engenharia de Software",
+    description: "Conheça a Engenho Soft, empresa de desenvolvimento de software, automação e inteligência artificial, com atendimento nacional.",
   },
   "/solucoes": {
-    title: "Soluções em Software e Sistemas | Maia Tecnologia — Engenharia de Software",
+    title: "Soluções em Software, Automação e IA | Engenho Soft",
     description: "Software sob medida, sistemas, plataformas web, aplicativos, automações, APIs, dados, dashboards, inteligência artificial, cloud, DevOps e segurança.",
   },
   "/processo": {
-    title: "Como trabalhamos | Maia Tecnologia — Engenharia de Software",
-    description: "Do entendimento à evolução: conheça o processo da Maia Tecnologia para criar soluções digitais personalizadas.",
+    title: "Como trabalhamos | Engenho Soft",
+    description: "Do entendimento à evolução: conheça o processo da Engenho Soft para criar soluções digitais personalizadas.",
   },
   "/cases": {
-    title: "Cases de Software | Maia Tecnologia — Engenharia de Software",
-    description: "Conheça experiências da Maia Tecnologia com plataformas, automações, integrações, dados, dashboards e produtos digitais.",
+    title: "Cases de Software | Engenho Soft",
+    description: "Conheça experiências da Engenho Soft com plataformas, automações, integrações, dados, dashboards e produtos digitais.",
   },
   "/contato": {
-    title: "Fale com a Maia Tecnologia — Engenharia de Software em Florianópolis",
-    description: "Fale com a Maia Tecnologia sobre sistemas, plataformas, automações, inteligência artificial, APIs, dados e projetos de software em Santa Catarina e todo o Brasil.",
+    title: "Fale com a Engenho Soft — Software, Automação e IA",
+    description: "Fale com a Engenho Soft sobre sistemas, plataformas, automações, inteligência artificial, APIs, dados e projetos de software em todo o Brasil.",
   },
 };
 
