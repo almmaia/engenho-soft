@@ -28,7 +28,7 @@ function Contato() {
             <span className="contact-label"><i><Mail size={18} /></i> E-mail</span>
             <strong>Enviar mensagem</strong>
           </a>
-          <a href="https://www.instagram.com/maiatechbr/" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/engenhosoft/" target="_blank" rel="noreferrer">
             <span className="contact-label"><i><FaInstagram size={18} /></i> Instagram</span>
             <strong>Acessar perfil</strong>
           </a>

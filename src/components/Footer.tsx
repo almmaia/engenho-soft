@@ -37,7 +37,7 @@ function Footer() {
           <a className="social-contact" href="mailto:alanmaix@gmail.com?subject=Contato pelo site Engenho Soft" aria-label="Enviar um e-mail para a Engenho Soft" title="E-mail">
             <span className="social-icon"><Mail size={18} /></span>
           </a>
-          <a className="social-contact" href="https://www.instagram.com/maiatechbr/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Engenho Soft" title="Instagram">
+          <a className="social-contact" href="https://www.instagram.com/engenhosoft/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Engenho Soft" title="Instagram">
             <span className="social-icon"><FaInstagram size={19} /></span>
           </a>
           <a className="social-contact" href="https://www.linkedin.com/company/maia-tecnologia/" target="_blank" rel="noreferrer" aria-label="Abrir o LinkedIn da Engenho Soft" title="LinkedIn">
