@@ -68,7 +68,8 @@
     max-width: none !important;
     justify-self: stretch !important;
     align-self: start !important;
-    padding: 112px 0 0 !important;
+    /* Alinha o título NAVEGAÇÃO ao topo visual da marca completa. */
+    padding: 0 !important;
     text-align: left !important;
   }
 
@@ -124,6 +125,29 @@
   .immersive-sticky .digital-scene-story {
     height: min(42vh, 340px) !important;
     min-height: 280px !important;
+  }
+}
+
+/* O menu móvel deve cobrir totalmente a página, sem linhas decorativas vazando. */
+@media (max-width: 900px) {
+  .header .nav-links,
+  .header .nav-links.open {
+    background: #0a0b0d !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .header .nav-links > a::before,
+  .header .nav-links > a::after,
+  .header .nav-group::before,
+  .header .nav-group::after,
+  .header .nav-group-trigger::before,
+  .header .nav-group-trigger::after,
+  .header .nav-cta::before,
+  .header .nav-cta::after {
+    content: none !important;
+    display: none !important;
   }
 }
 

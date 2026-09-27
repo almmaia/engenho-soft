@@ -12,6 +12,11 @@ function Header() {
     setOpenGroup(null);
   };
 
+  const goToHome = () => {
+    closeMenu();
+    window.scrollTo(0, 0);
+  };
+
   const toggleGroup = (group: string) => {
     setOpenGroup((current) => (current === group ? null : group));
   };
@@ -24,7 +29,7 @@ function Header() {
         </Link>
 
         <nav className={menuOpen ? "nav-links open" : "nav-links"}>
-          <NavLink to="/" end onClick={closeMenu}>
+          <NavLink to="/" end onClick={goToHome}>
             Início
           </NavLink>
 
