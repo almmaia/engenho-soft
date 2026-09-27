@@ -11,12 +11,87 @@
 }
 
 @media (max-width: 600px) {
+  .footer .footer-content {
+    width: calc(100% - 24px) !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    column-gap: 16px !important;
+    row-gap: 34px !important;
+    align-items: start !important;
+  }
+
+  .footer .footer-brand {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    justify-self: stretch !important;
+    text-align: center !important;
+    padding: 0 !important;
+  }
+
+  .footer .footer-brand .logo,
+  .footer .engenho-brand-mark,
+  .footer .footer-brand p {
+    width: 100% !important;
+    max-width: 145px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .footer .engenho-brand-mark.brand-mark-vertical img {
+    width: min(100%, 140px) !important;
+  }
+
   .footer .engenho-brand-mark .brand-mark-caption {
-    width: 240px !important;
-    max-width: 240px !important;
-    font-size: 10.5px !important;
+    width: 100% !important;
+    max-width: 145px !important;
+    font-size: 9.5px !important;
     line-height: 1.45 !important;
-    letter-spacing: 0.045em !important;
+    letter-spacing: 0.035em !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .footer .footer-brand p {
+    font-size: 12px !important;
+    line-height: 1.55 !important;
+  }
+
+  .footer .footer-navigation {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    justify-self: stretch !important;
+    align-self: start !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .footer .footer-navigation h3 {
+    text-align: left !important;
+  }
+
+  .footer .footer-links {
+    align-items: flex-start !important;
+  }
+
+  .footer .footer-contact {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+    max-width: none !important;
+    justify-self: stretch !important;
+    align-items: center !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .footer .footer-contact h3 {
+    text-align: center !important;
   }
 
   .home-cta {
@@ -48,3 +123,4 @@
     min-height: 280px !important;
   }
 }
+
