@@ -1,7 +1,7 @@
 /* Correções isoladas para a marca oficial e a narrativa em telas estreitas. */
 .header .engenho-brand-mark img,
 .footer .engenho-brand-mark img {
-  filter: brightness(2.35) contrast(1.04) !important;
+  filter: invert(1) hue-rotate(180deg) saturate(1.2) brightness(1.08) !important;
   opacity: 1 !important;
 }
 
@@ -11,6 +11,10 @@
 }
 
 @media (max-width: 600px) {
+  .home-cta {
+    padding-top: 38px !important;
+  }
+
   .immersive-story {
     height: auto !important;
     min-height: 0 !important;
