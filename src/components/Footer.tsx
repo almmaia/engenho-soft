@@ -43,7 +43,6 @@ function Footer() {
             <span className="social-icon"><FaInstagram size={19} /></span>
           </a>
           </div>
-          <a className="footer-phone" href="tel:+5548998141388">(48) 99814-1388</a>
         </div>
       </div>
 

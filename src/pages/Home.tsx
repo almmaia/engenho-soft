@@ -32,17 +32,20 @@ const scenes = [
 
 const outcomes = [
   { title: "Criar um produto digital", text: "Do conceito ao software em produção, com produto, experiência e engenharia na mesma frente." },
+  { title: "Projetar front-end e back-end", text: "Interfaces claras conectadas a arquiteturas, APIs e dados preparados para evoluir." },
   { title: "Organizar uma operação", text: "Sistemas sob medida para substituir controles dispersos e dar clareza ao trabalho diário." },
+  { title: "Automatizar com inteligência artificial", text: "Agentes e fluxos inteligentes aplicados a tarefas reais, com controle e integração ao negócio." },
   { title: "Conectar sistemas e dados", text: "Integrações e APIs para reduzir retrabalho e manter informações consistentes entre plataformas." },
   { title: "Evoluir o que já existe", text: "Modernização, novas jornadas e sustentação técnica sem interromper a operação." },
 ];
 
 const reelItems = [
   "Produtos digitais",
-  "Engenharia de software",
-  "Automação",
+  "Front-end",
+  "Back-end e APIs",
+  "Automação inteligente",
+  "IA e agentes",
   "Dados e inteligência",
-  "Experiências web",
 ];
 
 function Home() {
@@ -109,7 +112,7 @@ function Home() {
         <div className="container hero-content executive-hero-layout">
           <div className="premium-hero-copy">
             <div className="hero-badge">
-              ENGENHARIA / PRODUTO / DADOS / AUTOMAÇÃO
+              ENGENHO SOFT — ENGENHARIA DE SOFTWARE, AUTOMAÇÃO E IA
             </div>
 
             <h1>
@@ -118,9 +121,9 @@ function Home() {
             </h1>
 
             <p className="hero-description">
-              Da estratégia à operação: projetamos sistemas, plataformas,
-              automações e integrações que resolvem necessidades específicas
-              e continuam evoluindo com o negócio.
+              Da estratégia à operação: projetamos experiências front-end,
+              arquiteturas back-end, automações, agentes de IA e integrações
+              que resolvem necessidades reais e evoluem com o negócio.
             </p>
 
             <div className="hero-actions">
