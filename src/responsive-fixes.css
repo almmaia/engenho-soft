@@ -125,3 +125,104 @@
   }
 }
 
+/* Tablet: três colunas com uma régua própria e sem deslocamentos acumulados. */
+@media (min-width: 601px) and (max-width: 1099px) {
+  .footer .footer-content {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .75fr) minmax(0, 1fr) !important;
+    justify-content: space-between !important;
+    align-items: start !important;
+    column-gap: 20px !important;
+  }
+
+  .footer .footer-brand,
+  .footer .footer-navigation,
+  .footer .footer-contact {
+    grid-row: 1 !important;
+    width: 100% !important;
+    align-self: start !important;
+    transform: none !important;
+  }
+
+  .footer .footer-brand { grid-column: 1 !important; text-align: center !important; }
+  .footer .footer-navigation { grid-column: 2 !important; padding-top: 44px !important; }
+  .footer .footer-contact { grid-column: 3 !important; padding-top: 44px !important; }
+
+  .footer .footer-brand .logo,
+  .footer .engenho-brand-mark,
+  .footer .footer-brand p {
+    width: 100% !important;
+    max-width: 230px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .footer .engenho-brand-mark .brand-mark-caption {
+    width: 100% !important;
+    max-width: 230px !important;
+    font-size: 8.5px !important;
+    white-space: normal !important;
+  }
+}
+
+/* Notebook e desktop: início, centro e final usam a mesma régua do contêiner. */
+@media (min-width: 1100px) {
+  .footer .footer-content {
+    display: grid !important;
+    grid-template-columns: 280px 220px 300px !important;
+    justify-content: space-between !important;
+    align-items: start !important;
+    column-gap: 40px !important;
+  }
+
+  .footer .footer-brand,
+  .footer .footer-navigation,
+  .footer .footer-contact {
+    grid-row: 1 !important;
+    align-self: start !important;
+    transform: none !important;
+  }
+
+  .footer .footer-brand {
+    grid-column: 1 !important;
+    width: 280px !important;
+    justify-self: start !important;
+    text-align: center !important;
+  }
+
+  .footer .footer-navigation {
+    grid-column: 2 !important;
+    width: 220px !important;
+    justify-self: center !important;
+    padding-top: 56px !important;
+  }
+
+  .footer .footer-contact {
+    grid-column: 3 !important;
+    width: 300px !important;
+    justify-self: end !important;
+    padding-top: 56px !important;
+  }
+
+  .footer .footer-brand .logo,
+  .footer .engenho-brand-mark,
+  .footer .footer-brand p {
+    width: 280px !important;
+    max-width: 280px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    justify-content: center !important;
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .footer .engenho-brand-mark .brand-mark-caption {
+    width: 280px !important;
+    max-width: 280px !important;
+    white-space: nowrap !important;
+  }
+}
+
