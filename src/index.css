@@ -6349,6 +6349,63 @@ body{background:#0a0c0f}
   .hero-reveal .digital-scene-hero{min-height:320px!important}
 }
 
+/* Aplicação oficial da marca Engenho Soft. */
+.header .engenho-brand-mark,
+.footer .engenho-brand-mark{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+}
+.header .engenho-brand-mark img,
+.footer .engenho-brand-mark img{
+  display:block!important;
+  width:88px!important;
+  height:88px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  filter:grayscale(1) brightness(0) invert(1)!important;
+  opacity:1!important;
+}
+.header .engenho-brand-mark img{
+  width:96px!important;
+  height:96px!important;
+}
+.footer .engenho-brand-mark.brand-mark-vertical img{
+  width:188px!important;
+  height:188px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+.footer .engenho-brand-mark .brand-mark-caption{
+  width:210px!important;
+  max-width:210px!important;
+  margin:0!important;
+  padding-top:9px!important;
+  text-align:center!important;
+}
+
+@media(max-width:600px){
+  .header .engenho-brand-mark img{
+    width:92px!important;
+    height:92px!important;
+  }
+  .footer .engenho-brand-mark.brand-mark-vertical{
+    display:flex!important;
+    align-items:flex-start!important;
+  }
+  .footer .engenho-brand-mark.brand-mark-vertical img{
+    width:160px!important;
+    height:160px!important;
+  }
+  .footer .engenho-brand-mark .brand-mark-caption{
+    width:180px!important;
+    max-width:180px!important;
+    text-align:left!important;
+  }
+}
+
 @media(min-width:601px) and (max-width:679px){
   .footer .engenho-brand-mark.brand-mark-vertical img{
     width:150px!important;
