@@ -7064,6 +7064,43 @@ body{background:#0a0c0f}
   .footer .footer-bottom{text-align:center!important}
 }
 
+/* Correção visual definitiva: a arte oficial é muito escura para o fundo preto. */
+.header .engenho-brand-mark img,
+.footer .engenho-brand-mark img{
+  filter:brightness(2.35) contrast(1.04)!important;
+  opacity:1!important;
+}
+
+.footer .engenho-brand-mark .brand-mark-caption{
+  color:#c7d0d7!important;
+  font-weight:600!important;
+}
+
+/* No celular a história não reserva várias telas vazias depois das imagens. */
+@media(max-width:600px){
+  .immersive-story{
+    height:auto!important;
+    min-height:0!important;
+  }
+  .immersive-sticky{
+    position:relative!important;
+    top:auto!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:72px 0!important;
+    overflow:hidden!important;
+  }
+  .immersive-sticky .immersive-layout{
+    height:auto!important;
+    grid-template-rows:auto minmax(280px,42vh)!important;
+    align-content:start!important;
+  }
+  .immersive-sticky .digital-scene-story{
+    height:min(42vh,340px)!important;
+    min-height:280px!important;
+  }
+}
+
 /* Logo oficial enviada pelo cliente: preserva as cores originais do arquivo. */
 .header .engenho-brand-mark img,
 .footer .engenho-brand-mark img{
