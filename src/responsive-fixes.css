@@ -74,10 +74,12 @@
 
   .footer .footer-navigation h3 {
     text-align: left !important;
+    margin-bottom: 14px !important;
   }
 
   .footer .footer-links {
     align-items: flex-start !important;
+    gap: 9px !important;
   }
 
   .footer .footer-contact {
