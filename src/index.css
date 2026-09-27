@@ -6187,23 +6187,8 @@ body{background:#0a0c0f}
   }
 }
 
-.regional-page{padding-top:clamp(96px,12vw,150px);background:#eeeae2;color:#111}
-.regional-hero{max-width:980px}
-.regional-hero h1{max-width:850px;margin:18px 0 24px;font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.055em}
-.regional-hero p{max-width:760px;margin:0 0 34px;color:#525960;font-size:clamp(18px,2vw,23px);line-height:1.6}
-.regional-services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:80px;border-top:1px solid #b8bdc1;border-bottom:1px solid #b8bdc1}
-.regional-services article{min-height:260px;padding:34px 26px;border-right:1px solid #b8bdc1}
-.regional-services article:last-child{border-right:0}
-.regional-services svg{margin-bottom:48px;color:#536878}
-.regional-services strong{display:block;margin-bottom:14px;font-size:20px}
-.regional-services p{color:#62686d;line-height:1.55}
-.regional-note{padding-top:46px;padding-bottom:100px}
-.regional-note strong{font-size:22px}
-.regional-note p{max-width:680px;margin-top:10px;color:#62686d;font-size:17px;line-height:1.6}
 .footer-phone{display:inline-block;margin-top:16px;color:#aeb5bb;font-size:13px;text-decoration:none}
 .footer-phone:hover{color:#fff}
-@media(max-width:900px){.regional-services{grid-template-columns:repeat(2,1fr)}.regional-services article:nth-child(2){border-right:0}.regional-services article:nth-child(-n+2){border-bottom:1px solid #b8bdc1}}
-@media(max-width:600px){.regional-page{padding-top:84px}.regional-hero h1{font-size:clamp(42px,12vw,56px)}.regional-services{grid-template-columns:1fr;margin-top:56px}.regional-services article{min-height:0;padding:30px 0;border-right:0;border-bottom:1px solid #b8bdc1}.regional-services article:last-child{border-bottom:0}.regional-services svg{margin-bottom:24px}.regional-note{padding-bottom:72px}}
 
 /* Marca responsiva final: desenho nativo, nítido e legível em qualquer densidade. */
 .engenho-brand-mark{
