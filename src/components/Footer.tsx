@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import BrandMark from "./BrandMark";
 
@@ -36,10 +36,14 @@ function Footer() {
           <a className="social-contact" href="mailto:alanmaix@gmail.com?subject=Contato pelo site Engenho Soft" aria-label="Enviar um e-mail para a Engenho Soft" title="E-mail">
             <span className="social-icon"><Mail size={18} /></span>
           </a>
+          <a className="social-contact" href="tel:+5548998141388" aria-label="Ligar para a Engenho Soft no número (48) 99814-1388" title="Telefone">
+            <span className="social-icon"><Phone size={18} /></span>
+          </a>
           <a className="social-contact" href="https://www.instagram.com/engenhosoft/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Engenho Soft" title="Instagram">
             <span className="social-icon"><FaInstagram size={19} /></span>
           </a>
           </div>
+          <a className="footer-phone" href="tel:+5548998141388">(48) 99814-1388</a>
         </div>
       </div>
 

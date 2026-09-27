@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const whatsapp = "https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Engenho%20Soft%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.";
@@ -23,6 +23,10 @@ function Contato() {
           <a href={whatsapp} target="_blank" rel="noreferrer">
             <span className="contact-label"><i><FaWhatsapp size={18} /></i> WhatsApp</span>
             <strong>Conversar agora</strong>
+          </a>
+          <a href="tel:+5548998141388">
+            <span className="contact-label"><i><Phone size={18} /></i> Telefone</span>
+            <strong>(48) 99814-1388</strong>
           </a>
           <a href="mailto:alanmaix@gmail.com">
             <span className="contact-label"><i><Mail size={18} /></i> E-mail</span>
