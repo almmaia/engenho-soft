@@ -6187,6 +6187,168 @@ body{background:#0a0c0f}
   }
 }
 
+/* Marca responsiva final: desenho nativo, nítido e legível em qualquer densidade. */
+.engenho-brand-mark{
+  display:inline-grid!important;
+  grid-template-columns:42px auto!important;
+  grid-template-rows:auto!important;
+  align-items:center!important;
+  justify-content:start!important;
+  gap:11px!important;
+  width:auto!important;
+  color:#f7f8fa;
+}
+.engenho-monogram{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border:1px solid rgba(255,255,255,.42);
+  transform:rotate(45deg);
+}
+.engenho-monogram::after{
+  content:"";
+  position:absolute;
+  inset:6px;
+  border:1px solid rgba(124,205,255,.55);
+}
+.engenho-monogram i{
+  position:absolute;
+  z-index:1;
+  color:#fff;
+  font:700 12px/1 Arial,sans-serif;
+  font-style:normal;
+  transform:rotate(-45deg);
+}
+.engenho-monogram i:first-child{transform:translate(-5px,-5px) rotate(-45deg)}
+.engenho-monogram i:last-child{transform:translate(5px,5px) rotate(-45deg);color:#8dd5ff}
+.engenho-wordmark{display:flex;align-items:baseline;gap:5px;white-space:nowrap}
+.engenho-wordmark strong,
+.engenho-wordmark b{font:700 18px/1 Arial,sans-serif;letter-spacing:.08em}
+.engenho-wordmark b{color:#8dd5ff}
+.engenho-brand-mark.brand-mark-vertical{
+  grid-template-columns:52px auto!important;
+  grid-template-rows:auto auto!important;
+  column-gap:14px!important;
+  row-gap:10px!important;
+}
+.brand-mark-vertical .engenho-monogram{width:52px;height:52px}
+.brand-mark-vertical .engenho-wordmark strong,
+.brand-mark-vertical .engenho-wordmark b{font-size:23px}
+.engenho-brand-mark .brand-mark-caption{
+  grid-column:1/-1!important;
+  width:auto!important;
+  max-width:none!important;
+  margin:0!important;
+  padding-top:8px!important;
+  border-top:1px solid rgba(255,255,255,.22);
+  font-size:9px!important;
+  line-height:1.4!important;
+  letter-spacing:.1em!important;
+  color:#95a2ad!important;
+}
+.header .engenho-brand-mark img,
+.footer .engenho-brand-mark img{display:none!important}
+
+/* Celular: uma coluna limpa, sem recortes ou texto espremido. */
+@media(max-width:600px){
+  html,body,#root{max-width:100%;overflow-x:hidden}
+  .container{width:calc(100% - 40px)!important;max-width:none!important}
+  .nav{height:82px!important}
+  .engenho-brand-mark{grid-template-columns:36px auto!important;gap:10px!important}
+  .engenho-monogram{width:36px;height:36px}
+  .engenho-wordmark strong,.engenho-wordmark b{font-size:15px;letter-spacing:.065em}
+
+  .hero-reveal .hero-content{
+    min-height:auto!important;
+    padding:72px 0 54px!important;
+  }
+  .hero-reveal .executive-hero-layout{display:block!important}
+  .hero-reveal .premium-hero-copy{width:100%!important;max-width:none!important}
+  .hero-reveal .hero-badge{font-size:11px!important;line-height:1.45!important;letter-spacing:.055em!important}
+  .hero-reveal h1{font-size:clamp(42px,12vw,54px)!important;line-height:.98!important;max-width:10ch!important}
+  .hero-reveal .hero-description{max-width:34ch!important;font-size:16px!important;line-height:1.55!important}
+  .hero-reveal .digital-scene-hero{position:relative!important;width:100%!important;min-height:340px!important;margin:38px 0 0!important;transform:none!important}
+  .hero-reveal .hero-actions{margin-top:30px!important}
+  .hero-reveal .hero-actions .button{justify-content:center!important;padding-inline:18px!important;text-align:center!important}
+
+  .studio-reel-track{min-height:60px!important}
+  .studio-reel-item{padding-inline:20px!important;font-size:14px!important}
+  .immersive-story{height:auto!important;min-height:0!important}
+  .immersive-sticky{position:relative!important;min-height:0!important;padding:72px 0!important}
+  .immersive-layout{display:flex!important;flex-direction:column!important;gap:38px!important}
+  .immersive-copy{position:relative!important;top:auto!important;width:100%!important}
+  .immersive-copy h2{font-size:clamp(36px,10vw,46px)!important;line-height:1.02!important}
+  .immersive-copy p{font-size:16px!important;line-height:1.6!important}
+  .immersive-world{width:100%!important;min-height:360px!important;margin:0!important}
+
+  .work-intro{padding:76px 0!important}
+  .work-intro-grid{gap:24px!important}
+  .work-intro h2{font-size:clamp(38px,10vw,48px)!important;line-height:1.02!important}
+  .work-intro-grid>p{font-size:17px!important;line-height:1.6!important}
+  .outcome-list>a{grid-template-columns:30px 1fr!important;gap:10px 14px!important;padding:26px 0!important}
+  .outcome-list>a strong{font-size:20px!important;line-height:1.2!important}
+  .outcome-list>a p{grid-column:2!important;font-size:15px!important;line-height:1.55!important}
+  .product-film{min-height:420px!important}
+  .product-film-caption{gap:12px!important;padding:0 20px!important;font-size:11px!important}
+
+  .home-cta{padding:72px 0!important}
+  .home-cta-content{display:grid!important;gap:30px!important}
+  .home-cta h2{font-size:clamp(38px,10vw,48px)!important;line-height:1.03!important}
+  .home-cta .button{width:100%!important;min-width:0!important;justify-content:center!important}
+
+  .footer .footer-content{
+    width:calc(100% - 40px)!important;
+    grid-template-columns:1fr!important;
+    gap:34px!important;
+    padding-top:56px!important;
+    padding-bottom:34px!important;
+  }
+  .footer .footer-brand,.footer .footer-navigation,.footer .footer-contact{
+    grid-column:1!important;
+    grid-row:auto!important;
+    width:100%!important;
+    max-width:none!important;
+    justify-self:stretch!important;
+    align-items:flex-start!important;
+    text-align:left!important;
+  }
+  .footer .footer-brand .logo{width:auto!important;justify-content:flex-start!important;margin:0!important}
+  .footer .engenho-brand-mark.brand-mark-vertical{
+    grid-template-columns:46px auto!important;
+    grid-template-rows:auto auto!important;
+    justify-content:start!important;
+  }
+  .footer .brand-mark-vertical .engenho-monogram{width:46px;height:46px}
+  .footer .brand-mark-vertical .engenho-wordmark strong,
+  .footer .brand-mark-vertical .engenho-wordmark b{font-size:20px}
+  .footer .engenho-brand-mark .brand-mark-caption{text-align:left!important}
+  .footer .footer-brand p{width:100%!important;margin:18px 0 0!important;text-align:left!important;font-size:14px!important;line-height:1.65!important}
+  .footer .footer-navigation{padding-top:2px!important}
+  .footer .footer-navigation h3,.footer .footer-contact h3{width:100%!important;text-align:left!important;font-size:13px!important}
+  .footer .footer-links{width:100%!important;align-items:flex-start!important;gap:12px!important}
+  .footer .footer-links a{font-size:15px!important}
+  .footer .footer-contact{padding-top:2px!important}
+  .footer .footer-social-icons{width:auto!important;grid-template-columns:repeat(4,44px)!important;gap:12px!important;justify-content:start!important;margin:0!important}
+  .footer .footer-bottom{width:calc(100% - 40px)!important;margin-top:0!important;padding:20px 0 24px!important;text-align:left!important;font-size:12px!important}
+}
+
+@media(max-width:360px){
+  .container,.footer .footer-content,.footer .footer-bottom{width:calc(100% - 28px)!important}
+  .engenho-wordmark strong,.engenho-wordmark b{font-size:14px}
+  .hero-reveal h1{font-size:40px!important}
+  .footer .brand-mark-vertical .engenho-wordmark strong,
+  .footer .brand-mark-vertical .engenho-wordmark b{font-size:18px}
+}
+
+@media(max-height:520px) and (orientation:landscape){
+  .hero-reveal .hero-content{padding-top:44px!important;padding-bottom:38px!important}
+  .hero-reveal .executive-hero-layout{grid-template-columns:1.05fr .95fr!important;gap:30px!important}
+  .hero-reveal h1{font-size:clamp(40px,7vw,60px)!important}
+  .hero-reveal .digital-scene-hero{min-height:320px!important}
+}
+
 @media(min-width:601px) and (max-width:679px){
   .footer .engenho-brand-mark.brand-mark-vertical img{
     width:150px!important;
