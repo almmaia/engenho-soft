@@ -13,8 +13,8 @@
 @media (max-width: 600px) {
   .footer .footer-content {
     width: calc(100% - 24px) !important;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    column-gap: 16px !important;
+    grid-template-columns: minmax(150px, 1.15fr) minmax(110px, .85fr) !important;
+    column-gap: 12px !important;
     row-gap: 34px !important;
     align-items: start !important;
   }
@@ -33,7 +33,7 @@
   .footer .engenho-brand-mark,
   .footer .footer-brand p {
     width: 100% !important;
-    max-width: 145px !important;
+    max-width: 170px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     justify-content: center !important;
@@ -42,13 +42,13 @@
   }
 
   .footer .engenho-brand-mark.brand-mark-vertical img {
-    width: min(100%, 140px) !important;
+    width: min(100%, 150px) !important;
   }
 
   .footer .engenho-brand-mark .brand-mark-caption {
     width: 100% !important;
-    max-width: 145px !important;
-    font-size: 9.5px !important;
+    max-width: 170px !important;
+    font-size: 8.5px !important;
     line-height: 1.45 !important;
     letter-spacing: 0.035em !important;
     white-space: normal !important;
@@ -56,8 +56,9 @@
   }
 
   .footer .footer-brand p {
-    font-size: 12px !important;
+    font-size: 11px !important;
     line-height: 1.55 !important;
+    white-space: nowrap !important;
   }
 
   .footer .footer-navigation {
@@ -67,7 +68,7 @@
     max-width: none !important;
     justify-self: stretch !important;
     align-self: start !important;
-    padding: 0 !important;
+    padding: 38px 0 0 !important;
     text-align: left !important;
   }
 
