@@ -11,6 +11,14 @@
 }
 
 @media (max-width: 600px) {
+  .footer .engenho-brand-mark .brand-mark-caption {
+    width: 240px !important;
+    max-width: 240px !important;
+    font-size: 10.5px !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0.045em !important;
+  }
+
   .home-cta {
     padding-top: 38px !important;
   }
