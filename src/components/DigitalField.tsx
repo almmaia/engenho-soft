@@ -43,13 +43,18 @@ const fragmentShader = `
     vertical *= smoothstep(0.9, 0.1, abs(p.y - surface));
 
     float pulse = 0.55 + 0.45 * sin(time * 0.8 + p.x * 2.0);
+    float radius = length(uv - vec2(0.18, 0.0));
+    float tunnel = line(fract(radius * 5.2 - time * 0.16 - scroll * 0.12) - 0.5, 0.035);
+    tunnel *= smoothstep(1.45, 0.18, radius) * smoothstep(0.08, 0.28, radius);
+    float rays = pow(max(0.0, sin(atan(uv.y, uv.x - 0.18) * 9.0 + time * 0.16)), 18.0);
+    rays *= smoothstep(1.5, 0.12, radius) * 0.12;
     vec3 graphite = vec3(0.16, 0.20, 0.24);
     vec3 electric = vec3(0.28, 0.39, 0.46);
     vec3 silver = vec3(0.72, 0.77, 0.81);
     vec3 color = mix(graphite, silver, smoothstep(-0.35, 0.8, p.x));
     color = mix(color, electric, pulse * 0.16);
 
-    float energy = contour * (0.34 + pulse * 0.27) + vertical * 0.09;
+    float energy = contour * (0.34 + pulse * 0.27) + vertical * 0.09 + tunnel * 0.18 + rays;
     float glow = exp(-4.2 * abs(p.y - surface)) * 0.10;
     float vignette = smoothstep(1.65, 0.2, length(uv * vec2(0.72, 0.92)));
     float rightFade = smoothstep(-0.9, 0.25, uv.x);
