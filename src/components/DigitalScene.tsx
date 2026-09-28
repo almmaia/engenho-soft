@@ -35,8 +35,10 @@ function DigitalScene({ variant, phase = 0 }: DigitalSceneProps) {
           <div className="real-visual-depth depth-back" />
           <div className="real-visual-depth depth-front" />
         </div>
-        <div className="spatial-lens"><i /><i /><i /></div>
-        <div className="spatial-ribbons"><i /><i /><i /></div>
+        <div className="spatial-core"><i /><i /><i /></div>
+        <div className="spatial-panel spatial-panel-a"><small>SISTEMAS</small><strong>Arquitetura conectada</strong><i /><i /></div>
+        <div className="spatial-panel spatial-panel-b"><small>AUTOMAÇÃO</small><strong>Fluxos em movimento</strong><i /><i /></div>
+        <div className="spatial-axis"><span>PRODUTO</span><span>DADOS</span><span>IA</span></div>
         <div className="digital-scene-frame"><i /><i /><i /><i /></div>
       </div>
     );
@@ -65,7 +67,8 @@ function DigitalScene({ variant, phase = 0 }: DigitalSceneProps) {
         <div className="real-visual-depth depth-back" />
         <div className="real-visual-depth depth-front" />
       </div>
-      <div className="spatial-lens spatial-lens-story"><i /><i /><i /></div>
+      <div className="spatial-core spatial-core-story"><i /><i /><i /></div>
+      <div className="spatial-axis"><span>01</span><span>02</span><span>03</span></div>
       <div className="digital-scene-frame"><i /><i /><i /><i /></div>
     </div>
   );
