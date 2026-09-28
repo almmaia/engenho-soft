@@ -62,6 +62,18 @@ function Home() {
         const heroDistance = Math.max(hero.offsetHeight - window.innerHeight, 1);
         const heroProgress = Math.min(Math.max(-heroRect.top / heroDistance, 0), 1);
         hero.style.setProperty("--hero-progress", heroProgress.toFixed(3));
+        hero.style.setProperty("--hero-copy-y", `${(-heroProgress * 70).toFixed(2)}px`);
+        hero.style.setProperty("--hero-copy-opacity", Math.max(0, 1 - heroProgress * 1.35).toFixed(3));
+        hero.style.setProperty("--hero-copy-blur", `${(heroProgress * 5).toFixed(2)}px`);
+        hero.style.setProperty("--hero-scene-top", `${(76 - heroProgress * 76).toFixed(2)}px`);
+        hero.style.setProperty("--hero-scene-right", `${(-heroProgress * 4).toFixed(2)}vw`);
+        hero.style.setProperty("--hero-scene-bottom", `${(-heroProgress * 2).toFixed(2)}vh`);
+        hero.style.setProperty("--hero-scene-left", `${(52 - heroProgress * 56).toFixed(2)}%`);
+        hero.style.setProperty("--hero-clip-y", `${((1 - heroProgress) * 8).toFixed(2)}%`);
+        hero.style.setProperty("--hero-clip-x", `${((1 - heroProgress) * 4).toFixed(2)}%`);
+        hero.style.setProperty("--hero-scene-scale", (.92 + heroProgress * .12).toFixed(3));
+        hero.style.setProperty("--hero-media-scale", (1.05 + heroProgress * .06).toFixed(3));
+        hero.style.setProperty("--hero-frame-opacity", Math.max(0, 1 - heroProgress * 1.6).toFixed(3));
       }
 
       const story = storyRef.current;

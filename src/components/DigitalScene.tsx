@@ -31,12 +31,12 @@ function DigitalScene({ variant, phase = 0 }: DigitalSceneProps) {
       <div className="digital-scene digital-scene-hero spatial-scene" aria-hidden="true" onPointerMove={moveScene} onPointerLeave={resetScene}>
         <DigitalField />
         <div className="real-visual real-visual-hero">
-          <img src="https://images.unsplash.com/photo-1643959144243-8ac12487c287?auto=format&fit=crop&w=1800&q=85" alt="" decoding="async" fetchPriority="high" />
+          <video autoPlay muted loop playsInline preload="metadata">
+            <source src="/video/ai-innovation-3d.mp4" type="video/mp4" />
+          </video>
           <div className="real-visual-depth depth-back" />
           <div className="real-visual-depth depth-front" />
         </div>
-        <div className="spatial-lens"><i /><i /><i /></div>
-        <div className="spatial-ribbons"><i /><i /><i /></div>
         <div className="digital-scene-frame"><i /><i /><i /><i /></div>
       </div>
     );
@@ -65,7 +65,6 @@ function DigitalScene({ variant, phase = 0 }: DigitalSceneProps) {
         <div className="real-visual-depth depth-back" />
         <div className="real-visual-depth depth-front" />
       </div>
-      <div className="spatial-lens spatial-lens-story"><i /><i /><i /></div>
       <div className="digital-scene-frame"><i /><i /><i /><i /></div>
     </div>
   );
