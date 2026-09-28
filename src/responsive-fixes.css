@@ -305,8 +305,10 @@
 /* Direção cinematográfica: mídia, escala e câmera substituem peças decorativas. */
 @media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
   .hero-reveal {
+    display: block !important;
     height: 190vh !important;
     min-height: 1250px !important;
+    overflow: clip !important;
   }
 
   .hero-reveal .executive-hero-layout {
@@ -340,7 +342,8 @@
     bottom: var(--hero-scene-bottom, 0) !important;
     left: var(--hero-scene-left, 52%) !important;
     width: auto !important;
-    min-height: 0 !important;
+    height: calc(100% - var(--hero-scene-top, 76px)) !important;
+    min-height: 520px !important;
     margin: 0 !important;
     border: 0 !important;
     clip-path: inset(var(--hero-clip-y, 8%) var(--hero-clip-x, 4%));
