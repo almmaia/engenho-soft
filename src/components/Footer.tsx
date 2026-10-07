@@ -12,7 +12,7 @@ function Footer() {
             <BrandMark variant="vertical" />
           </Link>
 
-          <p>Florianópolis, Santa Catarina<br />Atendimento nacional</p>
+          <p>Belém, Pará, Brasil<br />Atendimento regional e nacional</p>
         </div>
 
         <div className="footer-navigation">

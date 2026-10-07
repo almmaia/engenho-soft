@@ -14,24 +14,24 @@ import "./index.css";
 
 const pageMetadata: Record<string, { title: string; description: string }> = {
   "/": {
-    title: "Engenho Soft | Engenharia de Software, Automação e IA",
-    description: "Engenharia de software, sistemas, plataformas web, automação e inteligência artificial em Florianópolis, Santa Catarina, com atendimento em todo o Brasil.",
+    title: "Engenho Soft | Sistemas, Automação e IA em Belém - PA",
+    description: "A Engenho Soft desenvolve sistemas sob medida, automações e soluções de inteligência artificial para empresas em Belém, Pará e todo o Brasil.",
   },
   "/sobre": {
-    title: "Sobre a Engenho Soft | Engenharia de Software",
-    description: "Conheça a Engenho Soft, empresa de desenvolvimento de software, automação e inteligência artificial, com atendimento nacional.",
+    title: "Sobre a Engenho Soft | Engenharia de Software em Belém - PA",
+    description: "Conheça a Engenho Soft: engenharia de software, sistemas, automação e inteligência artificial para empresas em Belém, Pará e todo o Brasil.",
   },
   "/solucoes": {
-    title: "Soluções em Software, Automação e IA | Engenho Soft",
-    description: "Software sob medida, sistemas, plataformas web, aplicativos, automações, APIs, dados, dashboards, inteligência artificial, cloud, DevOps e segurança.",
+    title: "Software sob medida, automação e IA em Belém | Engenho Soft",
+    description: "Desenvolvemos sistemas sob medida, plataformas, integrações, automações e inteligência artificial para empresas em Belém, Pará e no Brasil.",
   },
   "/processo": {
-    title: "Como trabalhamos | Engenho Soft",
-    description: "Do entendimento à evolução: conheça o processo da Engenho Soft para criar soluções digitais personalizadas.",
+    title: "Processo de desenvolvimento de software | Engenho Soft",
+    description: "Veja como a Engenho Soft transforma desafios de empresas de Belém, do Pará e de todo o Brasil em software sob medida.",
   },
   "/contato": {
-    title: "Fale com a Engenho Soft | Software, Automação e IA",
-    description: "Fale com a Engenho Soft sobre sistemas, plataformas, automações, inteligência artificial, APIs, dados e projetos de software em todo o Brasil.",
+    title: "Contato | Sistemas, automação e IA em Belém - Engenho Soft",
+    description: "Converse com a Engenho Soft sobre sistemas sob medida, automação e inteligência artificial. Atendemos Belém, Pará e todo o Brasil.",
   },
 };
 
