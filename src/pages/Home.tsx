@@ -113,14 +113,14 @@ function Home() {
             </div>
 
             <h1>
-              Tecnologia para
-              <span> novos desafios</span>
+              Sistemas, automação e IA
+              <span> para empresas em Belém - PA</span>
             </h1>
 
             <p className="hero-description">
-              Da estratégia à operação: projetamos sistemas, plataformas,
-              automações e integrações que resolvem necessidades específicas
-              e continuam evoluindo com o negócio.
+              Desenvolvemos software sob medida, automações e soluções de
+              inteligência artificial para empresas em Belém, Ananindeua,
+              Marituba, região metropolitana, todo o Pará e o Brasil.
             </p>
 
             <div className="hero-actions">

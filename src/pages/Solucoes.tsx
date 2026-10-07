@@ -27,7 +27,8 @@ function Solucoes() {
 
           <p>
             Desenvolvemos tecnologia personalizada para empresas,
-            profissionais, operações e novos produtos.
+            profissionais, operações e novos produtos em Belém, Ananindeua,
+            Marituba, região metropolitana, todo o Pará e o Brasil.
           </p>
         </div>
 

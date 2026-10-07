@@ -37,9 +37,9 @@ function Contato() {
             <strong>Acessar perfil</strong>
           </a>
           <div className="contact-info">
-            <span className="contact-label"><i><MapPin size={18} /></i> Localização</span>
-            <strong>Florianópolis, Santa Catarina</strong>
-            <small>Atendimento em todo o Brasil</small>
+            <span className="contact-label"><i><MapPin size={18} /></i> Área de atendimento</span>
+            <strong>Belém, Pará, Brasil</strong>
+            <small>Atendemos Belém, Ananindeua, Marituba, região metropolitana, todo o Pará e o Brasil.</small>
           </div>
         </div>
       </div>

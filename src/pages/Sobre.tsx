@@ -119,7 +119,7 @@ function Sobre() {
             <h2>Alan Maia</h2>
             <strong>Fundador e Desenvolvedor de Software</strong>
             <p>Atua diretamente no entendimento de cada necessidade, nas decisões técnicas e no desenvolvimento das soluções da Engenho Soft.</p>
-            <span className="founder-location">Florianópolis, Santa Catarina • Atendimento nacional</span>
+            <span className="founder-location">Engenho Soft • Belém, Pará • Atendimento em todo o Brasil</span>
             <a
               href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Engenho%20Soft%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
               target="_blank"
